@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rent your very own electric car.">
+    <meta name="author" content="Henry Leonard">
+    <title>Electric Car Rental</title>
+</head>
+<body>
+    <h1>Electric Car Rental</h1>
+    <main>
+        <section>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <p>
+                        <label for="electricCar">Choose Your Electric Car:</label>
+                        <select name="electricCar" id="electricCar">
+                            <optgroup>
+                                <option value="Hyundai Ioniq 5">Hyundai Ioniq 5</option>
+                                <option value="Chevrolet Bolt">Chevrolet Bolt</option>
+                                <option value="Volvo XC40">Volvo XC40</option>
+                                <option value="BMW i7">BMW i7</option>
+                                <option value="Ford F-150 Lightning">Ford F-150 Lightning</option>
+                            </optgroup> 
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <label for="pick-up">Pick-up Date:</label>
+                    <input type="date" id="pick-up" name="rental-start"  min="2023-12-05" max="2024-12-31"/>
+
+                    <label for="return">Return Date:</label>
+                    <input type="date" id="return" name="trip-end"  min="2024-01-01" max="2024-12-31"/>
+
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

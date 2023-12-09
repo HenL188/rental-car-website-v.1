@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rent your very own suv.">
+    <meta name="author" content="Henry Leonard">
+    <title>Suv Rental</title>
+</head>
+<body>
+    <h1>Suv Rental</h1>
+    <main>
+        <section>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <p>
+                        <label for="suvCar">Choose Your Suv:</label>
+                        <select name="suvCar" id="suvCar">
+                            <optgroup>
+                                <option value="Honda CR-V"> Honda CR-V</option>
+                                <option value="Kia Telluride i">Kia Telluride i</option>
+                                <option value="Hyundai Kona">Hyundai Kona</option>
+                                <option value="Ford Expedition">Ford Expedition</option>
+                                <option value="Toyota RAV4">Toyota RAV4</option>
+                            </optgroup> 
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <label for="pick-up">Pick-up Date:</label>
+                    <input type="date" id="pick-up" name="rental-start"  min="2023-12-05" max="2024-12-31"/>
+
+                    <label for="return">Return Date:</label>
+                    <input type="date" id="return" name="trip-end"  min="2024-01-01" max="2024-12-31"/>
+
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

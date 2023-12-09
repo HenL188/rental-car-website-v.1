@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rent your very own compact car.">
+    <meta name="author" content="Henry Leonard">
+    <title>Compact Car Rental</title>
+</head>
+<body>
+    <h1>Compact Car Rental</h1>
+    <main>
+        <section>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <p>
+                        <label for="compactCar">Choose Your Compact Car:</label>
+                        <select name="compactCar" id="compactCar">
+                            <optgroup>
+                                <option value="honda civic">Honda Civic</option>
+                                <option value="hyundai elantra">Hyundai Elantra</option>
+                                <option value="toyota corolla">Toyota Corolla</option>
+                                <option value="kia forte">Kia Forte</option>
+                                <option value="subaru impreza">Subaru Impreza</option>
+                            </optgroup> 
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <label for="pick-up">Pick-up Date:</label>
+                    <input type="date" id="pick-up" name="rental-start"  min="2023-12-05" max="2024-12-31"/>
+
+                    <label for="return">Return Date:</label>
+                    <input type="date" id="return" name="trip-end"  min="2024-01-01" max="2024-12-31"/>
+
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
